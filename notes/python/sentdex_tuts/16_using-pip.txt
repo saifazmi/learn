@@ -1,0 +1,14 @@
+Using Pip for Module Installation
+=================================
+
+Package Index
+--------------
+Located at https://pypi.python.org
+
+Install Command
+----------------
+$ pip install <package_name>
+
+### Downloaded Package *.whl files
+
+$ pip install <*.whl file>

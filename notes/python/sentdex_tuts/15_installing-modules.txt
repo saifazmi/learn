@@ -1,0 +1,19 @@
+Python Modules
+==============
+
+Location
+---------
+Places python will look for a module:
+- inside packages
+- script dir
+
+Installation
+-------------
+### Linux
+- use pip (enough said)
+- in rare cases use the distribution's package manager
+
+### Windows
+- extract package
+- open CMD in folder
+- run $ setup.py install
