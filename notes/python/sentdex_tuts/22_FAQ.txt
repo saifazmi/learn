@@ -1,0 +1,21 @@
+FAQ
+====
+
+- What is the shebang line? #!/usr/bin/python
+
+A: Notifies linux of the path to python so that the script can be run as
+an executable. Useless for Windows
+
+- In modules what is the following?
+if __name__ == '__main__':
+    print("such great module")
+
+A: The above line of code prevents the module from running as soon as it
+has been imported in another script. This makes sure that the specific print
+statement only runs when the module is being run on it on and not when it is
+being imported by other programs without calling any functions.
+
+Without that if statement the print() will run as soon as another script runs
+"import module_name."
+
+The if satement asks if the module while is the __main__ file being executed.
