@@ -1,6 +1,7 @@
-# Strings
+# Strings and Methods
 
-### Declaring Strings
+## Declaring Strings
+
 Storing string literals in `string` variables.
 
 ```python
@@ -31,29 +32,29 @@ for multi-line string, just like multi-line comments
 > because I know this neat backslash trick."
 > ```
 
-### Common string operations
+## Common string operations
 
-#### String length: `len()`
+### String length: `len()`
 
 ```python
 >>> print(len("abc"))
 3
 ```
 
-#### String concatenation: `+`
+### String concatenation: `+`
 
 ```python
 >>> print("abc" + "def")
 abcdef
 ```
 
-Another way to print out multiple string literals as one is by using commas `,` in the print statement.
+Another way to print out multiple string literals as one is by using commas `,` in the print statement. This will automatically add spaces between them.
 ```python
 >>> print("abc", "xyz")
 abc xyz 
 ```
 
-#### Selecting each `char` in a string
+### Selecting each `char` in a string
 
 Characters in a string can be accessed just like an array, since string literals are technically `char[]`. And of course it start from `0`
 
@@ -67,11 +68,11 @@ The way we're using brackets after the string is referred to as subscripting or 
 
 > **NOTE:** for the sake of simplicity I say that a string is a `char[]` i.e. character array but technically in python it's **NOT** an array, as python doesn't implement collections as array internally.
 > 
-> The default built-in Python type is called a list, not an array. It is an ordered container of arbitrary length that can hold a heterogeneous collection of objects (their types do not matter and can be freely mixed). This should not be confused with the `array` module, which offers a type closer to the C array type; the contents must be homogeneous (all of the same type), but the length is still dynamic.
+> The default built-in Python type is a list, and not an array. It is an ordered container of arbitrary length that can hold a heterogeneous collection of objects (their types do not matter and can be freely mixed). This should not be confused with the `array` module, which offers a type closer to the C array type; the contents must be homogeneous (all of the same type), but the length is still dynamic.
 > 
 > _http://stackoverflow.com/questions/1514553/how-to-declare-an-array-in-python_
 
-#### Selecting a particular section in a string
+### Selecting a particular section in a string
 
 This can be done by defining a range of index values separated by a colon `:`
 
@@ -114,3 +115,10 @@ Instead, we would have to create an entirely new string (although we can still g
 ```
 
 In the first example, we were trying to change part of `my_string` and keep the rest of it unchanged, which doesn't work. In the second example, we created a new string by adding two strings together, one of which was a part of `my_string`; then we took that new string and completely reassigned `my_string` to this new value.
+
+## Use Objects and Methods
+
+Python is an example of an Object-Oriented Programming (OOP) language. This means that information is stored in objects. A _string_ is an example of an object in python. Strings are very simple objects, they only hold one piece of information i.e. their value.
+
+But an object can be very complex if needed. It can even hold other objects inside it. This helps to give structure and organisation to the program.
+

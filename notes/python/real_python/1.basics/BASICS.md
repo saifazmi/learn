@@ -67,3 +67,6 @@ Blah blah blah
 bla bla blah
 '''
 ```
+
+### Variables
+Python variables are case sensitive
