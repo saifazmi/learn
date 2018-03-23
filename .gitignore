@@ -1,2 +1,5 @@
-resources
+resources/
 __pycache__/
+.venv/
+venv/
+.vscode/
