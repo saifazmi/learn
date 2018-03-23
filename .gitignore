@@ -1,6 +1,5 @@
 # Folders
 resources/
-__pycache__/
 
 # Environment
 .venv/
