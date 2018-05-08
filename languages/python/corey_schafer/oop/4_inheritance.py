@@ -1,7 +1,7 @@
 # Inheritance - Creating Subclasses
 
 '''
-Class inheritance allows us to inherite attributes and methods from a parent
+Class inheritance allows us to inherit attributes and methods from a parent
 class. This useful because we can create subclasses with all the functionality
 of parent class and modify or add new methods and attributes without changing
 the parent class.
@@ -19,8 +19,8 @@ dev_2 = Developer("Test", "User", 50000)
 
 The code will create the developer employees even though the Developer class
 doesn't have a __init__ method of it own. When creating these Developer, python
-first looks in the Developer clas for init method since its not there, python
-walks up the chain of inheritance and reaches the Employee calss and looks for
+first looks in the Developer class for init method since its not there, python
+walks up the chain of inheritance and reaches the Employee class and looks for
 the init method there and since that exists, it is used. Python follows this
 chain until it encounters what it needs and this chain is called:
 The Method Resolution Order

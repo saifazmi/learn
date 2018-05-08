@@ -17,7 +17,7 @@ have __repr__ at the minimum.
 A good rule of thumb for creating __repr__ is to try and display something that
 can be copy and pasted back in to python code to recreate that object.
 
-There are dunder methods for arithematic opoerations like __add__, __mul__, etc
+There are dunder methods for arithmetic operations like __add__, __mul__, etc
 '''
 
 

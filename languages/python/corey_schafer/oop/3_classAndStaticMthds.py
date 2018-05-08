@@ -1,4 +1,4 @@
-# Difference between regular, class and static mehtods
+# Difference between regular, class and static methods
 
 '''
 CLASS METHODS
@@ -25,7 +25,7 @@ connection with the class.
 
 They are declared using the @staticmethod decorator.
 
-We generally end up writting regular methods whcih should be static methods, to
+We generally end up writting regular methods which should be static methods, to
 identify such methods check if we don't access the instance or class anywhere
 within the method.
 '''

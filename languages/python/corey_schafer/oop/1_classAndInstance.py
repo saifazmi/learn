@@ -2,7 +2,7 @@
 
 '''
 Classes can be seen throughtout most modern programming languages.
-They allow us to write reuable code. Data and function associated with a
+They allow us to write reusable code. Data and function associated with a
 specific class are called attributes and methods respectively.
 
 Lets create a simple Employee class.
@@ -44,7 +44,7 @@ The code above works, but its not the best use of a class. We will now use
 a the special dunder __init__ method, this method can be thought of as a
 constructor in other languages or simply as initialise.
 
-When we create methods within a class they recieve the instance as the first
+When we create methods within a class they receive the instance as the first
 argument automatically and by convention we should call it "self", essentially
 self represents the instance.
 
