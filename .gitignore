@@ -7,3 +7,6 @@ venv/
 
 # Editors and IDEs
 .vscode/
+
+# ansi_C
+*.out
