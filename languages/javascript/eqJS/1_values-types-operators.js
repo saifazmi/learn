@@ -149,3 +149,70 @@ Ternary or conditional operator: (condition) ? :
 */
 console.log(true ? 1 : 2); // 1
 console.log(false ? 1 : 2); // 2
+
+
+// AUTOMATIC TYPE CONVERSION
+
+/*
+JS will run almost any program, even the odd ones
+When an operator is applied to the wrong type of value, JS will quietly convert
+the value of the type it needs, and the rules are not clear.
+This is called "type coercion"
+*/
+// null is converted to 0
+console.log(8 * null); // 0
+// "5" is converted to 5
+console.log("5" - 1); // 4
+// 1 is converted to "1"
+console.log("5" + 1); // 51
+// "five" is not an obvious number and is converted to NaN
+console.log("five" * 2); // NaN
+// converts one value to the type of the other
+console.log(false == 0); // true
+// null and undefined as only equal to themselves and no conversion takes place
+// this is a useful behaviour for when we want to test if a given value is real
+console.log(null == null); // true
+console.log(null == undefined); // true
+console.log(null == 0); // false
+
+/*
+To avoid automatic type conversion & compare the precise value use === !==
+which tests if two values are precisely equal to or not equal to each other
+*/
+
+
+// SHORT-CIRCUITING of LOGICAL OPERATORS
+
+/*
+&& || deal with values of different types in a peculiar way.
+They convert the value on their left side to Boolean type in order to decide
+what to do. And depending on the operator and the result of the conversion,
+either the *original* left or right hand value.
+
+|| operator, will return the value on the left hand side if it can be converted
+to true, else will return value on its right
+
+&& operator, will return the value on the left hand side if it can be converted
+to false, else will return the value on the right
+*/
+// null converts to false so the original value on the right is returned
+console.log(null || "user"); // user
+// "Agnes" is converted to true so the original on the left is returned
+console.log("Agnes" || "user"); // Agnes
+
+console.log("user" && null); // null
+console.log(0 && 1); // 0
+
+/*
+This behaviour is useful to fall back on default value. If we have a value
+which might be empty, we can  add || and providing a replacement value.
+
+The rule for converting strings and numbers to Boolean is that, 0, NaN and ""
+(empty string) count as false and the rest are true.
+
+The part to the right of these operators is only evaluated when necessary, i.e
+in case of true || X, no matter what X is the result will be true and X is
+never evaluated. This is called "short-circuit evaluation". This also applies
+to the conditional operators, where out of the second and third values, only
+the one which is selected is evaluated.
+*/
