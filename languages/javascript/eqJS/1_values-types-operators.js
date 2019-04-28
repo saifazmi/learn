@@ -6,7 +6,7 @@
 - approx. 18 quintillion numbers i.e. 18 with 18 zeros after it
 - in reality JS stores 9 quadrillion (15 zeros) WHOLE numbers because:
 -- 1 bit used for the sign of the number +ve or -ve
--- some more bits used for storing the position of the decimal point 
+-- some more bits used for storing the position of the decimal point
 */
 
 console.log("Integer:", 13); // integer
@@ -53,7 +53,7 @@ console.log('Float on the ocean'); // single quote
 console.log('Hello there, I\'m Saif'); // character escaping
 console.log("This is a backslash \"\\\"");
 console.log("Line one\nLine two"); // new line
-console.log("Here is some\tIndentation") // tab
+console.log("Here is some\tIndentation"); // tab
 
 console.log("con" + "cat" + "e" + "nate"); // concatenation
 
@@ -114,7 +114,7 @@ console.log(1 - 2 % 3);
 /*
 == Unary Operators ==
 operate on only value, eg: typeof which returns a string value naming the type
-type of the value. 
+type of the value.
 The minus operator can be used as both a binary and unary operator
 */
 console.log(typeof 4.5);
