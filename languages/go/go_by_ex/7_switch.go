@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
-	// Basic switch statement
 	i := 2
-	fmt.Print("Write ", i, " as ")
+	fmt.Println("Write ", i, " as ")
+
+	// Basic switch
 	switch i {
 	case 1:
 		fmt.Println("one")
@@ -17,16 +20,16 @@ func main() {
 		fmt.Println("three")
 	}
 
-	// Using multiple expressions in the same statement and default
+	// Commas can be used spearate multiple expressions
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
-		fmt.Println("It's the weekened")
+		fmt.Println("It's the weekend")
 	default:
 		fmt.Println("It's a weekday")
 	}
 
-	// Switch without an expression is an alt for if/else and
-	// also non-constant case expressions
+	// switch without an expression is an alternate to if/else logic
+	// case expressions can be non-constant values
 	t := time.Now()
 	switch {
 	case t.Hour() < 12:
@@ -35,13 +38,13 @@ func main() {
 		fmt.Println("It's after noon")
 	}
 
-	// Type switch compares types instead of values.
+	// Type switch compares types instread of values
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:
 			fmt.Println("I'm a bool")
 		case int:
-			fmt.Println("I'am an int")
+			fmt.Println("I'm an int")
 		default:
 			fmt.Printf("Don't know type %T\n", t)
 		}
