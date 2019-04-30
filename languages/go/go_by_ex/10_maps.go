@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	/* Maps are Go's built-in associative data type,
-	   also called hashes and dicts in other languages
+	also called hashes and dicts in other languages
 	*/
 
 	// Create a map using built-in 'make()'
