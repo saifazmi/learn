@@ -3,5 +3,17 @@
   It is now <%= @time %>
 </p>
 <p>
+  1 + 2 is <%= 1 + 2 %> <br>
+  Hello! Space <%= "cow" + "boy" %> <br>
+  The time in 1 hour will be <%= 1.hour.from_now.localtime %>
+</p>
+<p>
+  Here is a list of files in the current directory: <br>
+  <ul>
+  <% @files.each do |file| %>
+    <li><%= file %></li>
+  <% end %>
+  </ul>
+<p>
   Time to say <%= link_to "Goodbye", say_goodbye_path %>!
 </p>
