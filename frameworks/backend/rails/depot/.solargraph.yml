@@ -1,0 +1,16 @@
+---
+include:
+  - "**/*.rb"
+exclude:
+  - spec/**/*
+  - test/**/*
+  - vendor/**/*
+  - ".bundle/**/*"
+require: []
+domains: []
+reporters:
+  - rubocop
+  - require_not_found:
+    exclude: # fix for issue: https://github.com/castwide/vscode-solargraph/issues/94#issuecomment-451716739
+      - test/**/*
+max_files: 0
